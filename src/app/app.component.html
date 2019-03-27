@@ -1,1 +1,31 @@
 <app-user-profile></app-user-profile>
+
+<ul>
+    <li>Pommes de terre</li>
+    <li [ngStyle]="{backgroundColor: isThisIngredientVital ? 'red' : 'yellow'}">Raclette</li>
+    <li>Jambon</li>
+    <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
+    <li>Chou-fleur</li>
+</ul>
+<hr>
+<ul *appDisplayGuests="displayGuestList">
+    <li>Brenda</li>
+    <li>Dylan</li>
+    <li>Jean-Mi</li>
+    <li>Kylie</li>
+</ul>
+<hr>
+<ul *ngFor="let song of songList">
+    <li>{{ song }}</li>
+</ul>
+<hr>
+<h1 HighLight>Raclette</h1>
+<hr>
+<ul *ngIf="showMovies">
+    <li>Star Wars</li>
+    <li>Seingeur des anneaux</li>
+    <li HighLight>Aladin</li>
+    <li>Le roi lion</li>
+</ul>
+
+

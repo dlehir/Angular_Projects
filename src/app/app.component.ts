@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Dylan Site';
+  title = 'Raclette Party';
+
+  showMovies: boolean = false;
+
+  isThisIngredientVital: boolean = true;
+
+  displayGuestList: boolean = true;
+
+  songList:string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
+
 }
