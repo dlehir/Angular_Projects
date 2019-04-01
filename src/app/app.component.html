@@ -7,6 +7,20 @@
     <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
     <li>Chou-fleur</li>
 </ul>
+
+<ul>
+    <li>
+        <a [routerLink]="['/']">HOME</a>
+    </li>
+    <li>
+        <a [routerLink]="['/sign-up']">SignUp</a>
+    </li>
+    <li>
+        <a [routerLink]="['/user-profile']">UserProfile</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>
+
 <hr>
 <ul *appDisplayGuests="displayGuestList">
     <li>Brenda</li>
@@ -22,9 +36,9 @@
 <h1 HighLight>Raclette</h1>
 <hr>
 <ul *ngIf="showMovies">
-    <li>Star Wars</li>
+    <li HighLight>Star Wars</li>
     <li>Seingeur des anneaux</li>
-    <li HighLight>Aladin</li>
+    <li>Aladin</li>
     <li>Le roi lion</li>
 </ul>
 

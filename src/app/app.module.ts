@@ -9,13 +9,15 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HighlightDirective } from './highlight.directive';
 import { DisplayGuestsDirective } from './display-guests.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
     HighlightDirective,
-    DisplayGuestsDirective
+    DisplayGuestsDirective,
+    
   ],
   imports: [
     BrowserModule,
