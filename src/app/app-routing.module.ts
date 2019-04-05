@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { CommonModule } from '@angular/common';
+import { ListKittenComponent } from './list-kitten/list-kitten.component';
+
 
 const routes: Routes = [
-  { path: '', component: UserProfileComponent },
-  { path: 'sign-up', component: SignUpComponent },
-  { path: 'user-profile', component: UserProfileComponent },
+  { path: '', component: ListKittenComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  declarations: [],
+  imports: [CommonModule,
+  [RouterModule.forRoot(routes)]],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
